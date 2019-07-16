@@ -10,7 +10,7 @@
 enum {
     TD_RIGHT_END = 0,
     TD_LEFT_HOME,
-    TD_RSFT_CAPS,
+    TD_RSPC_CAPS,
 };
 
 // Tap Dance actions
@@ -20,13 +20,13 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     // Double tap left -> HOME
     [TD_LEFT_HOME] = ACTION_TAP_DANCE_DOUBLE(KC_LEFT, KC_HOME),
     // Double tap right shift -> CAPS LOCK
-    [TD_RSFT_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_RSFT, KC_CAPS),
+    [TD_RSPC_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_RSPC, KC_CAPS),
 };
 
 // KC_-prefixed macros for quantum actions to work with KC_-less layouts
 #define KC_REND     TD(TD_RIGHT_END)
 #define KC_LOME     TD(TD_LEFT_HOME)
-#define KC_RTCAP    TD(TD_RSFT_CAPS)
+#define KC_RTCAP    TD(TD_RSPC_CAPS)
 
 // Layers
 #define KC_TGNB     TG(_NUMBERS)
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *        |--------+------+------+------+------+------|      |                    |      |------+------+------+------+------+--------|
  *        | BkSlsh |   A  |   S  |   D  |   F  |   G  |------|                    |------|   H  |   J  |   K  |   L  |  ;   |   '    |
  *        |--------+------+------+------+------+------| MO(2)|                    | MO(1)|------+------+------+------+------+--------|
- *        | LSFT   |   Z  |   X  |   C  |   V  |   B  |      |                    |      |   N  |   M  |   ,  |   .  |   /  |RSFT/CAP|
+ *        | LSFT/( |   Z  |   X  |   C  |   V  |   B  |      |                    |      |   N  |   M  |   ,  |   .  |   /  |SFT/)/CAP
  *        `--------+------+------+------+------+-------------'                    `-------------+------+------+------+------+--------'
  *          |LCTRL | LALT | GUI  |L/HOME|R/END |                                                |  Up  | Down | LEFT | RIGHT| PRSCR|
  *          `----------------------------------'                                                `----------------------------------'
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //    |-------+-------+-------+-------+-------+-------+       |                   |       +-------+-------+-------+-------+-------+-------|
         BSLS,   A,      S,      D,      F,      G,                                          H,      J,      K,      L,      SCLN,   QUOT,
 //    |-------+-------+-------+-------+-------+-------+-------|                   |-------+-------+-------+-------+-------+-------+-------|
-        LSFT,   Z,      X,      C,      V,      B,      MOMD,                       MONB,   N,      M,      COMM,   DOT,    SLSH,   RTCAP,
+        LSPO,   Z,      X,      C,      V,      B,      MOMD,                       MONB,   N,      M,      COMM,   DOT,    SLSH,   RTCAP,
 //    `-------+-------+-------+-------+-------+---------------'                   `---------------+-------+-------+-------+-------+-------'
         LCTL,   LALT,   LGUI,   LOME,   REND,                                                       UP,     DOWN,   LEFT,   RGHT,   PSCR,
 //     `--------------------------------------'                                                   `--------------------------------------'
