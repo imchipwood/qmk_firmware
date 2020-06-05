@@ -31,11 +31,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     | Left mouse  | TT(SUB) |    0    |    .    |  Enter  |
     \-----------------------------------------------------'
     */
-    [_BASE] = LAYOUT(
+    [0] = LAYOUT(
                     KC_7,      KC_8,    KC_9,             KC_BSPC,
                     KC_4,      KC_5,    KC_6,             KC_ESC,
                     KC_1,      KC_2,    KC_3,             KC_TAB,
-        KC_BTN1,    TT(_SUB),  KC_0,    LSFT_T(KC_DOT),   KC_ENTER
+        KC_BTN1,    TT(1),     KC_0,    LSFT_T(KC_DOT),   KC_ENTER
     ),
     /*
             SUB LAYER
@@ -49,11 +49,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     |    LOCK     |         |         |         |    =    |
     \-----------------------------------------------------'
     */
-    [_SUB] = LAYOUT(
-                    _______,     _______,     _______,      RESET,
-                    _______,     _______,     _______,      KC_KP_PLUS,
-                    _______,     _______,     _______,      KC_KP_MINUS,
-        KC_LOCK,    _______,     _______,     _______,      KC_EQL
+    [1] = LAYOUT(
+                    KC_TRNS,     KC_TRNS,     KC_TRNS,      RESET,
+                    KC_TRNS,     KC_TRNS,     KC_TRNS,      KC_KP_PLUS,
+                    KC_TRNS,     KC_TRNS,     KC_TRNS,      KC_KP_MINUS,
+        KC_LOCK,    KC_TRNS,     KC_TRNS,     KC_TRNS,      KC_EQL
     ),
 };
 
