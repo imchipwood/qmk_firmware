@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 /* USB Device descriptor parameter */
-#define DEVICE_VER      0x0007
+#define DEVICE_VER      0x0008
 #define DESCRIPTION     4x4 macro/numpad with rotary encoder on the right side
 
 /* Column/Row IO definitions */

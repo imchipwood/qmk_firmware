@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define DEVICE_VER      0x0010
+#define DEVICE_VER      0x0011
 #define DESCRIPTION     4x4 macro/numpad with rotary encoder on the right side
 
 /* Column/Row IO definitions */
