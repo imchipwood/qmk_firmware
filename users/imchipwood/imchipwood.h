@@ -16,8 +16,8 @@
 
 
 enum td_keycodes {
-    TD_RIGHT_END = 0,
-    TD_LEFT_HOME,
+    TD_REND = 0, // right when tapped, end when double tapped
+    TD_LOME,     // left when tapped, home when double tapped
     TD_RSFT_CAPS,
     ALT_F2,    // F2 when tapped, LALT when held, LALT+F2 when double tapped
     CTL_F5,    // F5 when tapped, LCTL when held, LCTL+F5 when double tapped

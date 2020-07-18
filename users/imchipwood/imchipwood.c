@@ -118,9 +118,9 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     [ALT_F7]   = ACTION_TAP_DANCE_FN_ADVANCED(NULL, altf7_finished, altf7_reset),
     [DEL_NLCK] = ACTION_TAP_DANCE_DOUBLE(KC_DEL, KC_NLCK),
     // Double tap right -> END
-    [TD_RIGHT_END] = ACTION_TAP_DANCE_DOUBLE(KC_RIGHT, KC_END),
+    [TD_REND] = ACTION_TAP_DANCE_DOUBLE(KC_RIGHT, KC_END),
     // Double tap left -> HOME
-    [TD_LEFT_HOME] = ACTION_TAP_DANCE_DOUBLE(KC_LEFT, KC_HOME),
+    [TD_LOME] = ACTION_TAP_DANCE_DOUBLE(KC_LEFT, KC_HOME),
     // Double tap right shift -> CAPS LOCK
     [TD_RSFT_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_RSFT, KC_CAPS),
 };
