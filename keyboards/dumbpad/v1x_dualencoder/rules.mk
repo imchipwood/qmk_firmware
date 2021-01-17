@@ -22,3 +22,5 @@ COMMAND_ENABLE = no        # Commands for debug and configuration
 
 ENCODER_ENABLE = yes
 KEY_LOCK_ENABLE = yes
+
+LAYOUTS = ortho_4x4
