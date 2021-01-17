@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      |  TT(1)  |    0    |    .    |  Enter  |
      \---------------------------------------'
     */
-    [0] = LAYOUT(
+    [0] = LAYOUT_ortho_4x4(
         KC_7,      KC_8,    KC_9,     KC_BSPC,
         KC_4,      KC_5,    KC_6,     KC_ESC,
         KC_1,      KC_2,    KC_3,     KC_TAB,
@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     |         |         |         |    =    |
     \---------------------------------------'
     */
-    [1] = LAYOUT(
+    [1] = LAYOUT_ortho_4x4(
         _______,     _______,     _______,      RESET,
         _______,     _______,     _______,      KC_KP_PLUS,
         _______,     _______,     _______,      KC_KP_MINUS,
