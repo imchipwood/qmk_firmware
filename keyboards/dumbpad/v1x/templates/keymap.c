@@ -7,17 +7,17 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         switch (get_highest_layer(layer_state)) {
             case 0:
                 if (clockwise) {
-                    tap_code(KC_MS_R);
+                    tap_code(KC_VOLU);
                 } else {
-                    tap_code(KC_MS_L);
+                    tap_code(KC_VOLD);
                 }
                 break;
 
             default:
                 if (clockwise) {
-                    tap_code(KC_EQL);
+                    tap_code(KC_MNXT);
                 } else {
-                    tap_code(KC_MINS);
+                    tap_code(KC_MPRV);
                 }
                 break;
         }
